@@ -124,7 +124,7 @@
                         <manifest>
                             <addClasspath>true</addClasspath>
                             <classpathPrefix>lib/</classpathPrefix>
-                            <mainClass>controller.SimpleController</mainClass>
+                            <mainClass>com.Start</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
@@ -135,7 +135,7 @@
                 <version>2.4</version>
                 <configuration>
                     <descriptors>
-                        <descriptor>src/main/assembly/package.xml</descriptor>
+                        <descriptor>src/main/java/assembly/package.xml</descriptor>
                     </descriptors>
                 </configuration>
                 <executions>

@@ -1,4 +1,4 @@
-//package config;
+//package com.config;
 //
 //import org.springframework.boot.context.properties.ConfigurationProperties;
 //

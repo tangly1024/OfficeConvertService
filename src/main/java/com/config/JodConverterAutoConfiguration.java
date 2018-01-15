@@ -1,4 +1,4 @@
-//package config;
+//package com.config;
 //
 //import org.apache.commons.lang3.ArrayUtils;
 //import org.apache.commons.lang3.StringUtils;
@@ -15,8 +15,8 @@
 //import org.springframework.context.annotation.Bean;
 //import org.springframework.context.annotation.Configuration;
 //
-//import java.util.HashSet;
-//import java.util.Set;
+//import java.com.util.HashSet;
+//import java.com.util.Set;
 //
 //@Configuration
 //@ConditionalOnClass({DocumentConverter.class})
