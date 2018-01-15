@@ -3,21 +3,21 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
-        <property name="systemPropertiesModeName" value="SYSTEM_PROPERTIES_MODE_OVERRIDE" />
-        <property name="ignoreResourceNotFound" value="true" />
-        <property name="locations">
-                <!--<value>config.properties</value>-->
-            <value>file:/office/config.properties</value>
-        </property>
-    </bean>
+    <!--<bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">-->
+        <!--<property name="systemPropertiesModeName" value="SYSTEM_PROPERTIES_MODE_OVERRIDE" />-->
+        <!--<property name="ignoreResourceNotFound" value="true" />-->
+        <!--<property name="locations">-->
+            <!--<value>config.properties</value>-->
+            <!--<value>file:/office/config.properties</value>-->
+        <!--</property>-->
+    <!--</bean>-->
 
 
     <!-- 注入spring boot无法扫描到的bean. -->
     <bean id="openOfficeConnection" class="com.artofsolving.jodconverter.openoffice.connection.SocketOpenOfficeConnection"
           destroy-method="disconnect">
         <constructor-arg index="0">
-            <value>${OFFICE_LIB_HOST}</value>
+            <value>127.0.0.1</value>
         </constructor-arg>
         <constructor-arg index="1">
             <value>8997</value>
